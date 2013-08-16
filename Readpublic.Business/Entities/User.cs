@@ -12,6 +12,7 @@ namespace Readpublic.Business
 		public virtual string FirstName { get; set; }
 		public virtual string MiddleName { get; set; }
 		public virtual string LastName { get; set; }
+		public virtual string Tag { get; set; }
         public virtual IList<int> Favorites { get; set; }
 		public virtual IList<int> Shelve { get; set; }
 		public virtual IList<int> Friends { get; set; }
@@ -20,6 +21,9 @@ namespace Readpublic.Business
 		public virtual IList<int> Wishlist { get; set; }
 		public virtual Country Country { get; set; }
 		public virtual Language Language { get; set; }
-
+		public virtual DateTime JoinDate { get; set; }
+		public virtual DateTime LastSeen { get; set; }
+		public virtual bool IsAuthor { get; set; }
+		public virtual string ProfileDisplayPath { get; set; }
 	}
 }
