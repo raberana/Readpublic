@@ -48,10 +48,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Entities\Activity.cs" />
+    <Compile Include="Enums\Activity.cs" />
     <Compile Include="Entities\Author.cs" />
     <Compile Include="Entities\Book.cs" />
     <Compile Include="Entities\Country.cs" />
+    <Compile Include="Entities\Genre.cs" />
+    <Compile Include="Entities\History.cs" />
     <Compile Include="Entities\Language.cs" />
     <Compile Include="Entities\Login.cs" />
     <Compile Include="Entities\MediaType.cs" />
