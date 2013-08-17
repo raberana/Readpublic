@@ -10,7 +10,7 @@ namespace Readpublic.Business
 	{
 		public virtual int Id { get; set; }
 		public virtual string Name { get; set; }
-		public virtual IList<int> Books { get; set; }
+		public virtual IList<Book> Books { get; set; }
 		public virtual Author Author { get; set; }
 		public virtual DateTime StartDate { get; set; }
 		public virtual DateTime EndDate { get; set; }

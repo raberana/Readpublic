@@ -11,6 +11,8 @@
     <AssemblyName>Readpublic.Business</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -48,7 +50,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Enums\Activity.cs" />
+    <Compile Include="Entities\BookActivity.cs" />
+    <Compile Include="Entities\BookActivityId.cs" />
+    <Compile Include="Enums\Activities.cs" />
     <Compile Include="Entities\Author.cs" />
     <Compile Include="Entities\Book.cs" />
     <Compile Include="Entities\Country.cs" />
@@ -61,15 +65,28 @@
     <Compile Include="Entities\Series.cs" />
     <Compile Include="Entities\Shelf.cs" />
     <Compile Include="Entities\User.cs" />
+    <Compile Include="Mapping\AuthorMap.cs" />
+    <Compile Include="Enums\Rating.cs" />
+    <Compile Include="Mapping\BookActivityMap.cs" />
+    <Compile Include="Mapping\BookMap.cs" />
+    <Compile Include="Mapping\CountryMap.cs" />
+    <Compile Include="Mapping\GenreMap.cs" />
+    <Compile Include="Mapping\HistoryMap.cs" />
+    <Compile Include="Mapping\LanguageMap.cs" />
+    <Compile Include="Mapping\LoginMap.cs" />
+    <Compile Include="Mapping\MediaTypeMap.cs" />
+    <Compile Include="Mapping\PublisherMap.cs" />
+    <Compile Include="Mapping\SeriesMap.cs" />
+    <Compile Include="Mapping\ShelfMap.cs" />
+    <Compile Include="Mapping\UserMap.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Mapping\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">

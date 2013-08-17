@@ -1,0 +1,52 @@
+﻿#logoContainer {
+    height: 80px;
+    width: 120px;
+    float: left;
+    background-image: url(../Images/readpubliclogo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    z-index: -2;
+    animation: logoAnimate 10s infinite;
+    animation-delay: 10s;
+    -webkit-animation: logoAnimate 10s infinite;
+    -webkit-animation-delay: 10s;
+}
+
+@keyframes logoAnimate {
+    0% {
+        background-image: url(../Images/readpubliclogo.png);
+    }
+
+    10% {
+        background-image: url(../Images/readpublictext.png);
+    }
+
+    99% {
+        background-image: url(../Images/readpublictext.png);
+    }
+
+    100% {
+        background-image: url(../Images/readpubliclogo.png);
+    }
+}
+
+@-webkit-keyframes logoAnimate /* Safari and Chrome */
+{
+    0% {
+        background-image: url(../Images/readpubliclogo.png);
+    }
+
+    10% {
+        background-image: url(../Images/readpublictext.png);
+    }
+
+    99% {
+        background-image: url(../Images/readpublictext.png);
+    }
+
+    100% {
+        background-image: url(../Images/readpubliclogo.png);
+    }
+}

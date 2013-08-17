@@ -23,5 +23,6 @@ namespace Readpublic.Business
 		public virtual IList<int> MediaTypes { get; set; }
 		public virtual int Pages { get; set; }
 		public virtual string ISBN { get; set; }
+        public virtual decimal Rating { get; set; }
 	}
 }

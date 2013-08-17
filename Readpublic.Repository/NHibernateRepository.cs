@@ -13,7 +13,6 @@ namespace Readpublic.Repository
 {
 	public class NHibernateRepository<TEntity, TKey> where TEntity : class
 	{
-
 		ISession _session;
 		protected Configuration config;
 		protected ISessionFactory sessionFactory;
@@ -26,7 +25,7 @@ namespace Readpublic.Repository
 						  .Database(
 							  MsSqlConfiguration
 							  .MsSql2008
-							  .ConnectionString("Data Source=localhost;Initial Catalog=mwms;Integrated Security=True;User ID=sa;Password=sql"))
+							  .ConnectionString("Data Source=localhost;Initial Catalog=rpdb;Integrated Security=True;User ID=rp;Password=rp123"))
 							  .Mappings(m => m.FluentMappings.AddFromAssemblyOf<TEntity>())
 							  .ExposeConfiguration(cfg => new SchemaUpdate(cfg).Execute(false, true))
 						  .BuildConfiguration();

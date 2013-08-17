@@ -9,9 +9,11 @@ namespace Readpublic.Business
 	public class Author
 	{
 		public virtual int Id { get; set; }
-		public virtual string Name { get; set; }
-		public virtual User User { get; set; }
+        public virtual string FirstName { get; set; }
+        public virtual string MiddleName { get; set; }
+        public virtual string LastName { get; set; }
+		public virtual int UserId { get; set; }
 		public virtual string ProfileDisplayPath { get; set; }
-
+        public virtual int Points { get; set; }
 	}
 }

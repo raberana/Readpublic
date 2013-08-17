@@ -9,10 +9,10 @@ namespace Readpublic.Business
 	public class Shelf
 	{
 		public virtual int Id { get; set; }
-		public virtual User User { get; set; }
+		public virtual int UserId { get; set; }
 		public virtual DateTime DateCreated { get; set; }
-		public virtual IList<int> Books { get; set; }
-		public virtual IList<int> Genres { get; set; }
+        public virtual IList<Book> Books { get; set; }
+		public virtual IList<Genre> Genres { get; set; }
 		public virtual string ShelfCoverPath { get; set; }
 	}
 }
