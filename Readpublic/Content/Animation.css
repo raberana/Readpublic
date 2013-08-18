@@ -1,6 +1,6 @@
 ﻿#logoContainer {
     height: 80px;
-    width: 120px;
+    width: 115px;
     float: left;
     background-image: url(../Images/readpubliclogo.png);
     background-size: contain;
@@ -8,6 +8,8 @@
     background-position: center;
     position: relative;
     z-index: -2;
+    border: 2px solid;
+    border-radius: 4px;
     animation: logoAnimate 10s infinite;
     animation-delay: 10s;
     -webkit-animation: logoAnimate 10s infinite;
