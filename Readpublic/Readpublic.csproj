@@ -142,10 +142,21 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Angular\Partials\about.html" />
-    <Content Include="Angular\Partials\browsebooks.html" />
+    <Content Include="Angular\Partials\books.html" />
     <Content Include="Angular\Partials\home.html" />
-    <Content Include="Angular\Partials\shelve.html" />
+    <Content Include="Angular\Partials\mygroups.html" />
+    <Content Include="Angular\Partials\myshelf.html" />
+    <Content Include="Angular\Partials\signin.html" />
+    <Content Include="Angular\Partials\signup.html" />
     <Content Include="Angular\Scripts\app.js" />
+    <Content Include="Angular\Scripts\Controllers\aboutcontroller.js" />
+    <Content Include="Angular\Scripts\Controllers\bookscontroller.js" />
+    <Content Include="Angular\Scripts\Controllers\groupscontroller.js" />
+    <Content Include="Angular\Scripts\Controllers\homecontroller.js" />
+    <Content Include="Angular\Scripts\Controllers\shelfcontroller.js" />
+    <Content Include="Angular\Scripts\Controllers\signincontroller.js" />
+    <Content Include="Angular\Scripts\Controllers\signupcontroller.js" />
+    <Content Include="Angular\Scripts\Factories\accessfactory.js" />
     <Content Include="Content\Animation.css" />
     <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
@@ -201,6 +212,9 @@
     <Content Include="Content\themes\base\minified\jquery.ui.slider.min.css" />
     <Content Include="Content\themes\base\minified\jquery.ui.tabs.min.css" />
     <Content Include="Content\themes\base\minified\jquery.ui.theme.min.css" />
+    <Content Include="Content\tuktuk.css" />
+    <Content Include="Content\tuktuk.icons.css" />
+    <Content Include="Content\tuktuk.theme.css" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Content\PSD\readpubliclogo.psd" />
@@ -208,10 +222,9 @@
     <Content Include="Images\readpubliclogo.png" />
     <Content Include="Images\readpubliclogobnw.png" />
     <Content Include="Images\readpublictext.png" />
-    <Content Include="Scripts\angular-bootstrap-prettify.js" />
-    <Content Include="Scripts\angular-bootstrap-prettify.min.js" />
-    <Content Include="Scripts\angular-bootstrap.js" />
-    <Content Include="Scripts\angular-bootstrap.min.js" />
+    <Content Include="Images\readpublicwhole.png" />
+    <Content Include="Scripts\angular-animate.js" />
+    <Content Include="Scripts\angular-animate.min.js" />
     <Content Include="Scripts\angular-cookies.js" />
     <Content Include="Scripts\angular-cookies.min.js" />
     <Content Include="Scripts\angular-loader.js" />
@@ -219,9 +232,13 @@
     <Content Include="Scripts\angular-mocks.js" />
     <Content Include="Scripts\angular-resource.js" />
     <Content Include="Scripts\angular-resource.min.js" />
+    <Content Include="Scripts\angular-route.js" />
+    <Content Include="Scripts\angular-route.min.js" />
     <Content Include="Scripts\angular-sanitize.js" />
     <Content Include="Scripts\angular-sanitize.min.js" />
     <Content Include="Scripts\angular-scenario.js" />
+    <Content Include="Scripts\angular-touch.js" />
+    <Content Include="Scripts\angular-touch.min.js" />
     <Content Include="Scripts\angular.js" />
     <Content Include="Scripts\angular.min.js" />
     <Content Include="Scripts\i18n\angular-locale_af-na.js" />
@@ -525,10 +542,7 @@
     <Content Include="Scripts\knockout-2.1.0.debug.js" />
     <Content Include="Scripts\knockout-2.1.0.js" />
     <Content Include="Scripts\modernizr-2.5.3.js" />
-    <Content Include="Scripts\ui-bootstrap-0.5.0.js" />
-    <Content Include="Scripts\ui-bootstrap-0.5.0.min.js" />
-    <Content Include="Scripts\ui-bootstrap-tpls-0.5.0.js" />
-    <Content Include="Scripts\ui-bootstrap-tpls-0.5.0.min.js" />
+    <Content Include="Scripts\tuktuk.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -543,6 +557,7 @@
     <Content Include="Views\Shared\Error.cshtml" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Angular\Scripts\Directives\" />
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
   </ItemGroup>

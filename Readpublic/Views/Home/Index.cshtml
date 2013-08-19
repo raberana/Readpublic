@@ -1,47 +1,58 @@
 ﻿<!DOCTYPE html>
-<html data-ng-app="rpWebApp">
+<html ng-app="rpApp">
 <head>
-    <title>READPUBLIC</title>
+    <title>readpublic</title>
     <link rel="stylesheet" href="Content/Site.css">
     <link rel="stylesheet" href="Content/Animation.css">
+    <link rel="stylesheet" href="Content/tuktuk.css">
+    <link rel="stylesheet" href="Content/tuktuk.icons.css">
+    <link rel="stylesheet" href="Content/tuktuk.theme.css">
 </head>
 <body>
-    <div class="header">
-        <div id="logoContainer">
-        </div>
-        <nav class="menu">
-            <div id="ulleft">
-                <ul>
-                    <li class="lileft"><a href="#/Home">Home</a></li>
-                    <li class="lileft"><a href="#/Books">Browse Books</a></li>
-                    <li class="lileft"><a href="#/MyShelf">My Shelf</a></li>
-                    <li class="lileft"><a href="#/About">About</a></li>
+    <div class="row header">
+        <a href="#/Home" class="column_2"><span id="logoContainer"></span></a>
+        <nav class="column_10 navpanel">
+            <div class="column_7">
+                <ul class="column_4 navlistpanel ulnav">
+                    <li class="lihorizontal"><a href="#/Books">Books</a></li>
+                    <li class="lihorizontal"><a href="#/MyShelf">My Shelf</a></li>
+                    <li class="lihorizontal"><a href="#/MyGroups">My Groups</a></li>
+                    <li class="lihorizontal"><a href="#/About">About</a></li>
                 </ul>
             </div>
-            <div id="ulcenter">
-                <ul>
-                    <li class="licenter"></li>
+            <div class="column_1">
+                <ul class="">
+                    <li class="lihorizontal"></li>
                 </ul>
             </div>
-            <div id="ulright">
-                <ul>
-                    <li class="liright">SIGN UP</li>
-                    <li class="liright">SIGN IN</li>
+            <div class="column_2 navaccesspanel">
+                <ul class="ulnav">
+                    <li class="lihorizontal"><a href="#/SignUp">SIGN UP</a></li>
+                    <li class="lihorizontal"><a href="#/SignIn">SIGN IN</a></li>
                 </ul>
             </div>
 
         </nav>
     </div>
-    <div class="content">
+    <div class="content row">
         <div>
-            <div data-ng-view=""></div>
+            <div ng-view="" class="container"></div>
         </div>
     </div>
 
     <script src="Scripts/angular.min.js"></script>
-
+    <script src="Scripts/angular-resource.min.js"></script>
+    <script src="Scripts/angular-animate.min.js"></script>
+    <script src="Scripts/angular-route.min.js"></script>
     <script src="Angular/Scripts/app.js"></script>
-
+    <script src="Angular/Scripts/Controllers/aboutcontroller.js"></script>
+    <script src="Angular/Scripts/Controllers/homecontroller.js"></script>
+    <script src="Angular/Scripts/Controllers/bookscontroller.js"></script>
+    <script src="Angular/Scripts/Controllers/groupscontroller.js"></script>
+    <script src="Angular/Scripts/Controllers/shelfcontroller.js"></script>
+    <script src="Angular/Scripts/Controllers/signincontroller.js"></script>
+    <script src="Angular/Scripts/Controllers/signupcontroller.js"></script>
+    <script src="Angular/Scripts/Factories/accessfactory.js"></script>
     @*<script src="phonegap.js"></script>*@
 </body>
 </html>
