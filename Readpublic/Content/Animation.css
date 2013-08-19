@@ -1,12 +1,9 @@
 ﻿#logoContainer {
-    height: 80px;
-    width: 100px;
-    float: left;
+    height: 90px;
     background-image: url(../Images/readpublicwhole.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    position: relative;
     z-index: 1;
 }
 
