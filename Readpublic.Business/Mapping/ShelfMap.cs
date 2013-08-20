@@ -13,6 +13,7 @@ namespace Readpublic.Business
         {
             Id(x => x.Id);
             Map(x => x.UserId);
+            Map(x => x.Name);
             Map(x => x.ShelfCoverPath);
             Map(x => x.DateCreated);
             HasManyToMany(x => x.Genres).Table("ShelfGenre");

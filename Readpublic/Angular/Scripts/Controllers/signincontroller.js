@@ -1,4 +1,4 @@
-﻿rpApp.controller('SignInController', function ($scope, $location, accessFactory) {
+﻿rpApp.controller('SignInController', function ($scope, $location, userFactory) {
    
 });
 

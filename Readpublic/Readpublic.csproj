@@ -139,6 +139,8 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Helper.cs" />
+    <Compile Include="Models\UserSignUpViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -157,7 +159,7 @@
     <Content Include="Angular\Scripts\Controllers\shelfcontroller.js" />
     <Content Include="Angular\Scripts\Controllers\signincontroller.js" />
     <Content Include="Angular\Scripts\Controllers\signupcontroller.js" />
-    <Content Include="Angular\Scripts\Factories\accessfactory.js" />
+    <Content Include="Angular\Scripts\Factories\userfactory.js" />
     <Content Include="Content\Animation.css" />
     <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
@@ -558,7 +560,6 @@
   <ItemGroup>
     <Folder Include="Angular\Scripts\Directives\" />
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
@@ -587,9 +588,9 @@
     <VisualStudio>
       <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
         <WebProjectProperties>
-          <UseIIS>True</UseIIS>
+          <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerPort>44786</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
           <IISUrl>http://localhost:61195/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>

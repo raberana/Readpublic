@@ -1,3 +1,3 @@
-﻿rpApp.controller('GroupsController', function ($scope, $location, accessFactory) {
+﻿rpApp.controller('GroupsController', function ($scope, $location, userFactory) {
 
 });

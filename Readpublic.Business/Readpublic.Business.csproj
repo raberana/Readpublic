@@ -52,6 +52,7 @@
   <ItemGroup>
     <Compile Include="Entities\BookActivity.cs" />
     <Compile Include="Entities\BookActivityId.cs" />
+    <Compile Include="Entities\Group.cs" />
     <Compile Include="Enums\Activities.cs" />
     <Compile Include="Entities\Author.cs" />
     <Compile Include="Entities\Book.cs" />
@@ -59,21 +60,21 @@
     <Compile Include="Entities\Genre.cs" />
     <Compile Include="Entities\History.cs" />
     <Compile Include="Entities\Language.cs" />
-    <Compile Include="Entities\Login.cs" />
     <Compile Include="Entities\MediaType.cs" />
     <Compile Include="Entities\Publisher.cs" />
     <Compile Include="Entities\Series.cs" />
     <Compile Include="Entities\Shelf.cs" />
     <Compile Include="Entities\User.cs" />
+    <Compile Include="Enums\GroupRole.cs" />
     <Compile Include="Mapping\AuthorMap.cs" />
     <Compile Include="Enums\Rating.cs" />
     <Compile Include="Mapping\BookActivityMap.cs" />
     <Compile Include="Mapping\BookMap.cs" />
     <Compile Include="Mapping\CountryMap.cs" />
     <Compile Include="Mapping\GenreMap.cs" />
+    <Compile Include="Mapping\GroupMap.cs" />
     <Compile Include="Mapping\HistoryMap.cs" />
     <Compile Include="Mapping\LanguageMap.cs" />
-    <Compile Include="Mapping\LoginMap.cs" />
     <Compile Include="Mapping\MediaTypeMap.cs" />
     <Compile Include="Mapping\PublisherMap.cs" />
     <Compile Include="Mapping\SeriesMap.cs" />

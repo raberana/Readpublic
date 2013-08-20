@@ -1,3 +1,3 @@
-﻿rpApp.controller('AboutController', function ($scope, $location, accessFactory) {
+﻿rpApp.controller('AboutController', function ($scope, $location, userFactory) {
 
 });

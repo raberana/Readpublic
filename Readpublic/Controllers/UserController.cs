@@ -1,4 +1,5 @@
 ﻿using Readpublic.Business;
+using Readpublic.Models;
 using Readpublic.Repository;
 using System;
 using System.Collections.Generic;
@@ -12,12 +13,27 @@ namespace Readpublic.Controllers
     public class UserController : ApiController
     {
         [AcceptVerbs("GET", "POST")]
-        public HttpResponseMessage AddUser(User user)
+        public HttpResponseMessage AddUser(UserSignUpViewModel userParam)
         {
             UserManager userManager = new UserManager();
+            HistoryManager historyManager = new HistoryManager();
             try
             {
+                var user = new User();
+                user.UserName = userParam.UserName;
+                user.Password = userParam.Password;
+                user.Email = userParam.Email;
+                user.FirstName = userParam.FirstName;
+                user.MiddleName = userParam.MiddleName;
+                user.LastName = userParam.LastName;
+
                 userManager.Create(user);
+                var dbUser = userManager.FindUserEmail(user.Email);
+                historyManager.AddHistory(new History(dbUser)
+                {
+                    Activity = Activities.Joined,
+                    Description = Helper.GenerateActivityDescription(dbUser, Activities.Joined)
+                });
                 HttpResponseMessage response = Request.CreateResponse(HttpStatusCode.Created, user);
                 return response;
             }

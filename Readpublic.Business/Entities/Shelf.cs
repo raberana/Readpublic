@@ -10,6 +10,7 @@ namespace Readpublic.Business
 	{
 		public virtual int Id { get; set; }
 		public virtual int UserId { get; set; }
+        public virtual string Name { get; set; }
 		public virtual DateTime DateCreated { get; set; }
         public virtual IList<Book> Books { get; set; }
 		public virtual IList<Genre> Genres { get; set; }

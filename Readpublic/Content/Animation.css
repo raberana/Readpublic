@@ -1,13 +1,12 @@
 ﻿#logoContainer {
-    height: 80px;
+    position: absolute;
     width: 140px;
-    float: left;
+    height: 80px;
+    z-index: 1;
     background-image: url(../Images/readpubliccircle.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    position: relative;
-    z-index: -1;
 }
 
 

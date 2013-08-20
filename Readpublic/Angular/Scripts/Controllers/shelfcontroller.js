@@ -1,3 +1,3 @@
-﻿rpApp.controller('ShelfController', function ($scope, $location, accessFactory) {
+﻿rpApp.controller('ShelfController', function ($scope, $location, userFactory) {
 
 });

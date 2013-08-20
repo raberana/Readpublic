@@ -1,3 +1,3 @@
-﻿rpApp.controller('HomeController', function ($scope, $location, accessFactory) {
+﻿rpApp.controller('HomeController', function ($scope, $location, userFactory) {
 
 });

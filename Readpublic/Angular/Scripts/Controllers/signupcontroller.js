@@ -1,11 +1,21 @@
-﻿rpApp.controller('SignUpController', function ($scope, $location, accessFactory) {
-    var user = {
-        username: $scope.user.username,
-        password: $scope.user.username,
-        email: $scope.user.email,
-        firstname: $scope.user.firstname,
-        lastname: $scope.user.lastname,
-        middlename: $scope.user.middlename,
+﻿rpApp.controller('SignUpController', function ($scope, $location, userFactory) {
+
+
+    $scope.submit = function () {
+        var user = new userFactory({
+            UserName: $scope.user.username,
+            Password: $scope.user.password,
+            Email: $scope.user.email,
+            FirstName: $scope.user.firstname,
+            LastName: $scope.user.lastname,
+            MiddleName: $scope.user.middlename,
+        });
+
+        var res = user.$signup();
+        user.$promise.then(function (result) {
+            alert(result);
+            alert(angular.toJSON(result));
+        });
     };
-    
+
 });

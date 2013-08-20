@@ -51,6 +51,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="IUnitOfWork.cs" />
+    <Compile Include="Managers\HistoryManager.cs" />
     <Compile Include="Managers\UserManager.cs" />
     <Compile Include="NHibernateRepository.cs" />
     <Compile Include="NHibernateUnitOfWork.cs" />

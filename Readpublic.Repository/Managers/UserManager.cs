@@ -22,6 +22,11 @@ namespace Readpublic.Repository
             return Session.QueryOver<User>().Where(x => x.Id == id).SingleOrDefault();
         }
 
+        public User FindUserEmail(string email)
+        {
+            return Session.QueryOver<User>().Where(x => x.Email == email.Trim()).SingleOrDefault();
+        }
+
         public void DeleteUser(User user)
         {
             Delete(user);
