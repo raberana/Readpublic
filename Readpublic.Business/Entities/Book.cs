@@ -17,10 +17,10 @@ namespace Readpublic.Business
 		public virtual Series Series { get; set; }
 		public virtual Book Prequel { get; set; }
 		public virtual Book Sequel { get; set; }
-		public virtual IList<int> Genres { get; set; }
+		public virtual IList<Genre> Genres { get; set; }
 		public virtual Publisher Publisher { get; set; }
 		public virtual DateTime PublicationDate { get; set; }
-		public virtual IList<int> MediaTypes { get; set; }
+		public virtual IList<MediaType> MediaTypes { get; set; }
 		public virtual int Pages { get; set; }
 		public virtual string ISBN { get; set; }
         public virtual decimal Rating { get; set; }

@@ -22,5 +22,11 @@ namespace Readpublic.Business
         public virtual int AuthorId { get; set; }
 		public virtual string ProfileDisplayPath { get; set; }
         public virtual int Points { get; set; }
+
+        public User()
+        {
+            JoinDate = DateTime.Now.ToUniversalTime();
+            Points = 100;
+        }
 	}
 }

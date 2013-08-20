@@ -1,22 +1,11 @@
-﻿rpApp.factory('accessFactory', function ($http) {
-    var factory = {};
+﻿rpApp.factory('accessFactory', function ($resource) {
 
-    var currentUserId = 0;
-
-    factory.getUsers = function () {
-        return $http.get('http://mwmswebservice.apphb.com/api/values');
-    };
-
-    factory.validateUser = function (username, password) {
-        var url = "http://mwmswebservice.apphb.com/api/values" + "/getvalidateduser/" + username + "/" + password;
-        return $http.get(url);
-    };
-
-    factory.getUserById = function (id) {
-        var url = "http://mwmswebservice.apphb.com/api/values" + "/" + id;
-        currentUserId = id;
-        return $http.get(url);
-    };
+    var User = $resource('http://localhost:61195/user/:action/:id',
+              { action: "@action", id: "@id" }, //parameters default
+              {
+                  SignIn: { method: "POST", params: { action: "authenticateuser" } },
+                  SignUp: { method: "POST", params: { action: "adduser" } }
+              });
 
 
     return factory;

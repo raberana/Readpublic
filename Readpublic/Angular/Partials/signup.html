@@ -2,30 +2,39 @@
     <fieldset>
         <div class="pure-control-group">
             <label for="name">Username</label>
-            <input id="name" type="text" placeholder="Username">
+            <input id="name" type="text" placeholder="username" ng-model="user.username">
         </div>
 
         <div class="pure-control-group">
             <label for="password">Password</label>
-            <input id="password" type="password" placeholder="Password">
+            <input id="password" type="password" placeholder="password" ng-model="user.username">
         </div>
 
         <div class="pure-control-group">
             <label for="email">Email Address</label>
-            <input id="email" type="email" placeholder="Email Address">
+            <input id="email" type="email" placeholder="myemail@domain.com" ng-model="user.password">
         </div>
 
         <div class="pure-control-group">
-            <label for="foo">Supercalifragilistic Label</label>
-            <input id="foo" type="text" placeholder="Enter something here...">
+            <label for="name">First Name</label>
+            <input id="Text1" type="text" placeholder="Jay" ng-model="user.firstname">
         </div>
+        <div class="pure-control-group">
+            <label for="name">Middle Name</label>
+            <input id="Text2" type="text" placeholder="Ross" ng-model="user.middlename">
+        </div>
+        <div class="pure-control-group">
+            <label for="name">Last Name</label>
+            <input id="Text3" type="text" placeholder="Doe" ng-model="user.lastname">
+        </div>
+
 
         <div class="pure-controls">
             <label for="cb" class="pure-checkbox">
                 <input id="cb" type="checkbox"> I've read the terms and conditions
             </label>
 
-            <button type="submit" class="pure-button pure-button-primary">Submit</button>
+            <button type="submit" class="pure-button pure-button-primary" ng-click="submit()">Submit</button>
         </div>
     </fieldset>
 </form>

@@ -134,6 +134,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\UserController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -561,6 +562,16 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Readpublic.Business\Readpublic.Business.csproj">
+      <Project>{0594175a-41c7-40a7-94c5-5164a3567562}</Project>
+      <Name>Readpublic.Business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Readpublic.Repository\Readpublic.Repository.csproj">
+      <Project>{4ccdd924-3b1b-4a9a-a697-a76011d73b9f}</Project>
+      <Name>Readpublic.Repository</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

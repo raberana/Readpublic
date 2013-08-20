@@ -1,4 +1,4 @@
-﻿var rpApp = angular.module('rpApp', ['ngRoute', 'ngAnimate']);
+﻿var rpApp = angular.module('rpApp', ['ngRoute', 'ngAnimate', 'ngResource']);
 
 rpApp.config(function ($routeProvider) {
     $routeProvider
