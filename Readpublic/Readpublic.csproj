@@ -212,13 +212,12 @@
     <Content Include="Content\themes\base\minified\jquery.ui.slider.min.css" />
     <Content Include="Content\themes\base\minified\jquery.ui.tabs.min.css" />
     <Content Include="Content\themes\base\minified\jquery.ui.theme.min.css" />
-    <Content Include="Content\tuktuk.css" />
-    <Content Include="Content\tuktuk.icons.css" />
-    <Content Include="Content\tuktuk.theme.css" />
+    <Content Include="Content\Pure.css" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Content\PSD\readpubliclogo.psd" />
     <None Include="Scripts\jquery-1.7.1.intellisense.js" />
+    <Content Include="Images\readpubliccircle.png" />
     <Content Include="Images\readpubliclogo.png" />
     <Content Include="Images\readpubliclogobnw.png" />
     <Content Include="Images\readpublictext.png" />
@@ -542,7 +541,6 @@
     <Content Include="Scripts\knockout-2.1.0.debug.js" />
     <Content Include="Scripts\knockout-2.1.0.js" />
     <Content Include="Scripts\modernizr-2.5.3.js" />
-    <Content Include="Scripts\tuktuk.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
