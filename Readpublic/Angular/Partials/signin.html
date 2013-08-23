@@ -1,1 +1,17 @@
-﻿
+﻿<form class="pure-form pure-form-aligned">
+    <fieldset>
+        <div class="pure-control-group">
+            <label for="name">Username</label>
+            <input id="name" type="text" placeholder="username" ng-model="user.username">
+        </div>
+
+        <div class="pure-control-group">
+            <label for="password">Password</label>
+            <input id="password" type="password" placeholder="password" ng-model="user.password">
+        </div>
+
+        <div class="pure-controls">
+            <button type="submit" class="pure-button pure-button-primary" ng-click="submit()">SIGN IN</button>
+        </div>
+    </fieldset>
+</form>
