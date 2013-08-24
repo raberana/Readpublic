@@ -1,3 +1,3 @@
-﻿rpApp.controller('BookController', function ($scope, $location, userFactory) {
+﻿rpApp.controller('BooksController', function ($scope, $location, userFactory) {
 
 });

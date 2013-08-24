@@ -16,7 +16,7 @@ namespace Readpublic.Repository
         {
         }
 
-      
+
         public User FindUserById(int id)
         {
             return Session.QueryOver<User>().Where(x => x.Id == id).SingleOrDefault();
@@ -25,6 +25,12 @@ namespace Readpublic.Repository
         public User FindUserEmail(string email)
         {
             return Session.QueryOver<User>().Where(x => x.Email == email.Trim()).SingleOrDefault();
+        }
+
+        public User FindAuthenticatedUser(string username, string password)
+        {
+            return Session.QueryOver<User>().Where(x => x.UserName == username.Trim()
+                && x.Password == password.Trim()).SingleOrDefault();
         }
 
         public void DeleteUser(User user)
